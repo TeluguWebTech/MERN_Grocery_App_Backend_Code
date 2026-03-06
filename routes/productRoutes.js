@@ -13,4 +13,6 @@ router.post("/add-product", protected.adminMiddleware,
 router.get("/show-products", controller.getProducts)
 router.get("/search", searchController.searchProduts)
 
+router.get("/:id", controller.productById)
+
 module.exports = router
